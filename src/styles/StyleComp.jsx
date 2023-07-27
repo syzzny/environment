@@ -184,6 +184,8 @@ export const Go = styled.div`
     line-height: 25px;
 `
 
+
+// secton2 ---------------------------------------------------
 export const SectionWrap = styled.div`
     /* width: 100%; */
     /* padding:  80px; */
@@ -209,11 +211,22 @@ export const ContWrap = styled.div`
 export const SectionTitle = styled.h1`
     font-size: 95px;
     margin: 45px 0;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        font-size: 80px;
+        margin: 30px 0;
+    }
 `
 export const TextWrap = styled.div`
     max-width: 611px;
     margin: 0 auto;
     position: relative;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        max-width: 515px;
+    }
 `
 export const SectonIcon = styled.img`
     position: absolute;
@@ -229,6 +242,12 @@ export const Card = styled.div`
     overflow: hidden;
     margin: 0 auto;
     position: relative;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        width: 432px;
+        height: 348px;
+    }
 `
 export const Badge = styled.div`
     border: 1px solid #000;
@@ -239,6 +258,7 @@ export const Badge = styled.div`
     line-height: 36px;
     border-radius: 20px;
     left: 35px;
+    
 `
 export const BadgeYear = styled.div`
     border: 1px solid #000;
@@ -249,6 +269,11 @@ export const BadgeYear = styled.div`
     height: 40px;
     line-height: 36px;
     border-radius: 20px;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        right: 140px;
+    }
 `
 export const Footer = styled.footer`
     height: 100vh;
@@ -257,10 +282,15 @@ export const Footer = styled.footer`
     width: 100%;
 `
 export const FooterTitle = styled.h1`
-    padding: 100px 80px;
+    padding: 60px 80px;
     font-size: 130px;
     color: #fff;
     margin: 0;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        font-size: 100px;
+    }
 `
 export const FooterBox = styled.div`
     /* width: 100%; */
@@ -270,10 +300,21 @@ export const FooterBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        height: 100px;
+    }
 `
 export const FooterSns = styled.p`
     font-size: 35px;
     color: #fff;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        font-size: 30px;
+        font-weight: 300;
+    }
 `
 export const slideAnimation = keyframes`
     0% {
@@ -287,16 +328,16 @@ export const slideAnimation = keyframes`
 export const LinkBox = styled.div`
     --space: 2rem;
 
-display: grid;
-align-content: center;
-overflow: hidden;
-gap: var(--space);
-width: 100%;
-font-family: "Corben", system-ui, sans-serif;
-font-size: 1.5rem;
-line-height: 1.5;
-background-color: #fff;
-height: 120px;
+    display: grid;
+    align-content: center;
+    overflow: hidden;
+    gap: var(--space);
+    width: 100%;
+    font-family: "Corben", system-ui, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: #fff;
+    height: 120px;
 `
 export const LinkBoxWrap = styled.div`
     --duration: 15s;
