@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const Wrap = styled.div`
     padding: 80px;
@@ -206,4 +206,53 @@ export const FooterBox = styled.div`
 export const FooterSns = styled.p`
     font-size: 35px;
     color: #fff;
+`
+export const slideAnimation = keyframes`
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+`
+export const LinkBox = styled.div`
+    --space: 2rem;
+
+display: grid;
+align-content: center;
+overflow: hidden;
+gap: var(--space);
+width: 100%;
+font-family: "Corben", system-ui, sans-serif;
+font-size: 1.5rem;
+line-height: 1.5;
+background-color: #fff;
+height: 120px;
+`
+export const LinkBoxWrap = styled.div`
+    --duration: 15s;
+    --gap: var(--space);
+
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 2.4rem;
+`;
+
+export const MarqueeGroup = styled.div`
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: ${slideAnimation} var(--duration) linear infinite;
+`;
+export const AnimatedText = styled.div`
+    animation: ${slideAnimation} 10s linear infinite;
+    white-space: normal;
+`
+export const RinkText = styled.p`
+    font-size: 35px;
 `

@@ -3,7 +3,8 @@ import {
     Wrap, MainImg, MainWrap, Title, Involved, SubImg, Newsletter,
     Titletext, NewsTitle, NewsInfo, NewsSpan, NewsP, NewsImg, NewsName, NewsDetail,
     Go, SubImgWrap, SubIcon, SectionWrap, ContWrap, SectionTitle, TextWrap, SectonIcon,
-    Card, Badge, BadgeYear, Footer, FooterTitle, FooterBox, FooterSns
+    Card, Badge, BadgeYear, Footer, FooterTitle, FooterBox, FooterSns, LinkBox,
+    AnimatedText, MarqueeGroup, LinkBoxWrap, RinkText
 } from '../styles/StyleComp'
 
 
@@ -54,10 +55,10 @@ export default function Home() {
             </Wrap>
 
             <SectionWrap>
-                <ContWrap style={{borderRight: 'none', borderBottom: 'none'}}>
-                    <img src="assets/img/c.png" style={{ width: '100%', objectFit:'contain'}} />
+                <ContWrap style={{ borderRight: 'none', borderBottom: 'none' }}>
+                    <img src="assets/img/c.png" style={{ width: '100%', objectFit: 'contain' }} />
                 </ContWrap>
-                <ContWrap style={{borderBottom:'none'}}>
+                <ContWrap style={{ borderBottom: 'none' }}>
                     <TextWrap>
                         <SectionTitle>Our Challenge</SectionTitle>
                         <NewsP>
@@ -65,24 +66,24 @@ export default function Home() {
                             매 순간이 지구를 위한 선택의 기회입니다. <br />
                             지금 바로 우리의 힘을 모아, 환경 캠페인에 힘차게 동참합시다.
                         </NewsP>
-                            <SectonIcon src="assets/img/challengeIcon.png" alt="" />
+                        <SectonIcon src="assets/img/challengeIcon.png" alt="" />
                     </TextWrap>
                 </ContWrap>
-                <ContWrap style={{borderRight:'none' , padding: '60px'}}>
+                <ContWrap style={{ borderRight: 'none', padding: '60px' }}>
                     {/* <img src="assets/img/c3.png" style={{ width: '100%'}} /> */}
                     <Card>
-                        <img src="assets/img/c4.png" style={{ width: '100%'}} />
+                        <img src="assets/img/c4.png" style={{ width: '100%' }} />
                         <Badge>CanCrush Challenge</Badge>
                         <BadgeYear>2023</BadgeYear>
-                        <SectonIcon src="assets/img/challengeIcon.png" style={{top:'20px', right:'35px'}} />
+                        <SectonIcon src="assets/img/challengeIcon.png" style={{ top: '20px', right: '35px' }} />
                         <div></div>
                     </Card>
                 </ContWrap>
                 <ContWrap>
-                    <img src="assets/img/c2.png" style={{ width: '100%', objectFit:'contain'}} />
+                    <img src="assets/img/c2.png" style={{ width: '100%', objectFit: 'contain' }} />
                 </ContWrap>
             </SectionWrap>
-            
+
             <Footer>
                 <FooterTitle>Follow Us</FooterTitle>
                 <FooterBox>
@@ -97,6 +98,25 @@ export default function Home() {
                     <FooterSns>TWITTER</FooterSns>
                     <img src="assets/img/link.png" alt="" />
                 </FooterBox>
+                <LinkBox>
+                    <LinkBoxWrap>
+                        <MarqueeGroup>
+                            <img src="assets/img/linkB.png"/>
+                            <RinkText aria-hidden="true">LINKEDIN</RinkText>
+                            <img src="assets/img/linkB.png"/>
+                            <RinkText aria-hidden="true">LINKEDIN</RinkText>
+                            <img src="assets/img/linkB.png"/>
+                        </MarqueeGroup>
+
+                        <MarqueeGroup aria-hidden="true">
+                            <RinkText>LINKEDIN</RinkText>
+                            <img src="assets/img/linkB.png"/>
+                            <RinkText>LINKEDIN</RinkText>
+                            <img src="assets/img/linkB.png"/>
+                            <RinkText>LINKEDIN</RinkText>
+                        </MarqueeGroup>
+                    </LinkBoxWrap>
+                </LinkBox>
             </Footer>
         </div>
     )
