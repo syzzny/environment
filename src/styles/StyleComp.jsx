@@ -1,11 +1,28 @@
 import styled, { keyframes } from 'styled-components'
 
+
 export const Wrap = styled.div`
-    padding: 80px;
+    padding: 0 80px;
     height: 100vh;
-    padding-bottom: 0;
+
+    /* 모바일 화면 크기 */
+    @media (max-width: 767px) {
+    /* 스타일 */
+    }
+
+  /* 태블릿 화면 크기 */
+    @media (min-width: 768px) and (max-width: 1023px) {
+    /* 스타일 */
+    }
+
+  /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        padding: 0 60px;
+    }
+
 `
 export const MainImg = styled.img`
+    padding-top: 80px;
     width: 100%;
     position: relative;
 `
@@ -23,7 +40,7 @@ export const MainWrap = styled.div`
 export const Title = styled.div`
     flex: 3;
     text-align: left;
-    /* background-color: aliceblue; */
+    
 `
 export const Involved = styled.div`
     width: 150px;
@@ -41,6 +58,11 @@ export const Titletext = styled.h1`
     text-align: left;
     margin: 0;
     font-weight: 500;
+    
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        font-size: 70px;
+    }
 `
 export const SubImg = styled.div`
     flex: 1;
@@ -53,6 +75,12 @@ export const SubImgWrap = styled.div`
     border-right: none;
     width: 140px;
     height: 140px;
+    
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        width: 132px;
+        height: 132px;
+    }
 `
 export const SubIcon = styled.div`
     /* background-color: #fff; */
@@ -70,14 +98,31 @@ export const NewsTitle = styled.div`
     text-align: left;
     padding: 40px;
     overflow: hidden;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        padding: 30px;
+        height: 183px;
+    }
 `
 export const NewsSpan = styled.span`
     font-size: 22px;
     font-weight: 700;
+    
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        font-size: 20px;
+    }
 `
 export const NewsP = styled.p`
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        font-size: 16px;
+        white-space: nowrap;
+    }
 `
 export const NewsInfo = styled.div`
     border-top: 1px solid #000;
@@ -86,6 +131,13 @@ export const NewsInfo = styled.div`
     padding: 10px 40px;
     display: flex;
     gap: 30px;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        padding: 14px 30px;
+        white-space: nowrap;
+        height: 118px;
+    }
 `
 export const NewsImg = styled.div`
     width: 116px;
@@ -101,10 +153,25 @@ export const NewsName = styled.div`
     flex: 2;
     text-align: left;
 `
+export const Category = styled.p`
+    margin: 10px 0;
+    font-size: 16px;
+`
 export const NewsDetail = styled.div`
     flex: 1;
     display: grid;
     justify-items: end;
+    
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) {
+        align-content: space-between;
+    }
+
+`
+export const Date = styled.p`
+    font-size: 16px;
+    color: #868686;
+    margin: 10px 0;
 `
 export const Go = styled.div`
     width: 50px;
@@ -187,6 +254,7 @@ export const Footer = styled.footer`
     height: 100vh;
     background-image: linear-gradient(90deg, #547C7C, #9A9355);
     text-align: left;
+    width: 100%;
 `
 export const FooterTitle = styled.h1`
     padding: 100px 80px;
