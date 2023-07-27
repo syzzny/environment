@@ -12,11 +12,11 @@ export const Wrap = styled.div`
 
   /* 태블릿 화면 크기 */
     @media (min-width: 768px) and (max-width: 1023px) {
-    /* 스타일 */
+        padding: 0 40px;
     }
 
   /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) and (max-width: 1279px) {
         padding: 0 60px;
     }
 
@@ -25,6 +25,10 @@ export const MainImg = styled.img`
     padding-top: 80px;
     width: 100%;
     position: relative;
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        padding-top: 40px;
+    }
 `
 export const MainLogo = styled.img`
     position: absolute;
@@ -36,6 +40,11 @@ export const MainWrap = styled.div`
     display: flex;
     height: 388px;
     align-items: flex-end;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        height: 316px;
+    }
 `
 export const Title = styled.div`
     flex: 3;
@@ -60,7 +69,7 @@ export const Titletext = styled.h1`
     font-weight: 500;
     
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) and (max-width: 1279px) {
         font-size: 70px;
     }
 `
@@ -77,7 +86,7 @@ export const SubImgWrap = styled.div`
     height: 140px;
     
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) and (max-width: 1279px) {
         width: 132px;
         height: 132px;
     }
@@ -87,6 +96,11 @@ export const SubIcon = styled.div`
     width: 140px;
     height: 147px;
     position: relative;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        height: 132px;
+    }
 `
 export const Newsletter = styled.div`
     flex: 2;
@@ -100,9 +114,9 @@ export const NewsTitle = styled.div`
     overflow: hidden;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) and (max-width: 1279px) {
         padding: 30px;
-        height: 183px;
+        height: 124px;
     }
 `
 export const NewsSpan = styled.span`
@@ -110,7 +124,7 @@ export const NewsSpan = styled.span`
     font-weight: 700;
     
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) and (max-width: 1279px) {
         font-size: 20px;
     }
 `
@@ -119,8 +133,8 @@ export const NewsP = styled.p`
     font-size: 18px;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
-        font-size: 16px;
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        font-size: 15px;
         white-space: nowrap;
     }
 `
@@ -133,10 +147,10 @@ export const NewsInfo = styled.div`
     gap: 30px;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) and (max-width: 1279px) {
         padding: 14px 30px;
         white-space: nowrap;
-        height: 118px;
+        height: 103px;
     }
 `
 export const NewsImg = styled.div`
@@ -148,6 +162,11 @@ export const NewsImg = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        width: 100px;
+        height: 100px;
+    }
 `
 export const NewsName = styled.div`
     flex: 2;
@@ -163,7 +182,7 @@ export const NewsDetail = styled.div`
     justify-items: end;
     
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) and (max-width: 1279px) {
         align-content: space-between;
     }
 
@@ -213,9 +232,9 @@ export const SectionTitle = styled.h1`
     margin: 45px 0;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
-        font-size: 80px;
-        margin: 30px 0;
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        font-size: 60px;
+        margin: 20px 0;
     }
 `
 export const TextWrap = styled.div`
@@ -224,14 +243,20 @@ export const TextWrap = styled.div`
     position: relative;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
-        max-width: 515px;
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        max-width: 396px;
     }
 `
 export const SectonIcon = styled.img`
     position: absolute;
     right: 0px;
     bottom: 15px;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        bottom: 35px;
+        width: 35px;
+    }
 `
 export const Card = styled.div`
     width: 456px;
@@ -244,9 +269,9 @@ export const Card = styled.div`
     position: relative;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
-        width: 432px;
-        height: 348px;
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        width: 321px;
+        height: 258px;
     }
 `
 export const Badge = styled.div`
@@ -259,6 +284,13 @@ export const Badge = styled.div`
     border-radius: 20px;
     left: 35px;
     
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        height: 32px;
+        bottom: 13px;
+        left: 20px;
+        line-height: 30px;
+    }
 `
 export const BadgeYear = styled.div`
     border: 1px solid #000;
@@ -271,8 +303,11 @@ export const BadgeYear = styled.div`
     border-radius: 20px;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
-        right: 140px;
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        height: 32px;
+        bottom: 13px;
+        right: 45px;
+        line-height: 30px;
     }
 `
 export const Footer = styled.footer`
@@ -288,8 +323,9 @@ export const FooterTitle = styled.h1`
     margin: 0;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
-        font-size: 100px;
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        font-size: 75px;
+        padding: 50px 70px;
     }
 `
 export const FooterBox = styled.div`
@@ -302,8 +338,8 @@ export const FooterBox = styled.div`
     justify-content: space-between;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
-        height: 100px;
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        height: 80px;
     }
 `
 export const FooterSns = styled.p`
@@ -311,8 +347,8 @@ export const FooterSns = styled.p`
     color: #fff;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
-        font-size: 30px;
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        font-size: 25px;
         font-weight: 300;
     }
 `
@@ -338,6 +374,11 @@ export const LinkBox = styled.div`
     line-height: 1.5;
     background-color: #fff;
     height: 120px;
+
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        height: 100px;
+    }
 `
 export const LinkBoxWrap = styled.div`
     --duration: 15s;
@@ -364,4 +405,10 @@ export const AnimatedText = styled.div`
 `
 export const RinkText = styled.p`
     font-size: 35px;
+    
+    /* 데스크탑 화면 크기 */
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        font-size: 30px;
+        font-weight: 300;
+    }
 `
