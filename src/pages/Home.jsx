@@ -10,10 +10,11 @@ import {
 import { SectionsContainer, Section } from 'react-fullpage';
 
 export default function Home() {
+
     React.useEffect(()=>{
         let  windowVh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--windowVh',`${windowVh}px`);
-     },[])
+    },[])
     
     
     let options = {
@@ -21,7 +22,7 @@ export default function Home() {
     }
     return (
         <SectionsContainer {...options}>
-            {/* <Section> */}
+            <Section>
                 <Wrap>
                     <MainImg src={`${process.env.PUBLIC_URL}/assets/img/main.png`}/>
                     <MainWrap>
@@ -61,7 +62,7 @@ export default function Home() {
                         </Newsletter>
                     </MainWrap>
                 </Wrap>
-            {/* </Section> */}
+            </Section>
             <Section>
                 <SectionWrap>
                     <ContWrap style={{ borderRight: 'none', borderBottom: 'none' }}>
