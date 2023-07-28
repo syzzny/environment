@@ -18,7 +18,7 @@ export const Wrap = styled.div`
     }
 
   /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         padding: 0 60px;
     }
 
@@ -33,7 +33,7 @@ export const MainImg = styled.img`
         padding-top: 190px;
     }
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         padding-top: 40px;
     }
 `
@@ -58,7 +58,7 @@ export const MainWrap = styled.div`
         height: 366px;
     }
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         height: 316px;
     }
 `
@@ -115,7 +115,7 @@ export const SubImgWrap = styled.div`
     height: 140px;
     
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         width: 132px;
         height: 132px;
     }
@@ -127,7 +127,7 @@ export const SubIcon = styled.div`
     position: relative;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         height: 132px;
     }
 `
@@ -149,7 +149,7 @@ export const NewsTitle = styled.div`
     }
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         padding: 30px;
         height: 124px;
     }
@@ -159,7 +159,7 @@ export const NewsSpan = styled.span`
     font-weight: 700;
     
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         font-size: 20px;
     }
 `
@@ -173,7 +173,7 @@ export const NewsP = styled.p`
         font-size: 15px;
     }
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px){
+    @media (max-width: 1024px){
         font-size: 15px;
         white-space: nowrap;
     }
@@ -192,7 +192,7 @@ export const NewsInfo = styled.div`
         padding: 14px 30px;
     }
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         padding: 14px 30px;
         white-space: nowrap;
         height: 103px;
@@ -208,7 +208,7 @@ export const NewsImg = styled.div`
     justify-content: center;
     align-items: center;
 
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         width: 100px;
         height: 100px;
     }
@@ -227,7 +227,7 @@ export const NewsDetail = styled.div`
     justify-items: end;
     
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         align-content: space-between;
     }
 
@@ -277,7 +277,7 @@ export const SectionTitle = styled.h1`
     margin: 45px 0;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         font-size: 60px;
         margin: 20px 0;
     }
@@ -288,7 +288,7 @@ export const TextWrap = styled.div`
     position: relative;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px)  {
+    @media (max-width: 1024px)  {
         max-width: 396px;
     }
 `
@@ -298,7 +298,7 @@ export const SectonIcon = styled.img`
     bottom: 15px;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         bottom: 35px;
         width: 35px;
     }
@@ -314,7 +314,7 @@ export const Card = styled.div`
     position: relative;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px){
+    @media (max-width: 1024px){
         width: 321px;
         height: 258px;
     }
@@ -330,7 +330,7 @@ export const Badge = styled.div`
     left: 35px;
     
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         height: 32px;
         bottom: 13px;
         left: 20px;
@@ -348,7 +348,7 @@ export const BadgeYear = styled.div`
     border-radius: 20px;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         height: 32px;
         bottom: 13px;
         right: 45px;
@@ -368,7 +368,7 @@ export const FooterTitle = styled.h1`
     margin: 0;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         font-size: 75px;
         padding: 50px 70px;
     }
@@ -383,7 +383,7 @@ export const FooterBox = styled.div`
     justify-content: space-between;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px)  {
+    @media (max-width: 1024px)  {
         height: 80px;
     }
 `
@@ -392,7 +392,7 @@ export const FooterSns = styled.p`
     color: #fff;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px){
+    @media (max-width: 1024px){
         font-size: 25px;
         font-weight: 300;
     }
@@ -421,7 +421,7 @@ export const LinkBox = styled.div`
     height: 120px;
 
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px){
+    @media (max-width: 1024px){
         height: 100px;
     }
 `
@@ -452,7 +452,7 @@ export const RinkText = styled.p`
     font-size: 35px;
     
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         font-size: 30px;
         font-weight: 300;
     }
