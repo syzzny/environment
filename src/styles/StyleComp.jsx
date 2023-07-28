@@ -3,7 +3,8 @@ import styled, { keyframes } from 'styled-components'
 
 export const Wrap = styled.div`
     padding: 80px;
-    height: 100vh;
+    height : 100%;
+   height : var(--vh);
 
     /* 모바일 화면 크기 */
     @media (max-width: 767px) {

@@ -10,6 +10,12 @@ import {
 import { SectionsContainer, Section } from 'react-fullpage';
 
 export default function Home() {
+    React.useEffect(()=>{
+        let  windowVh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--windowVh',`${windowVh}px`);
+     },[])
+    
+    
     let options = {
         anchors: ['sectionOne', 'sectionTwo', 'sectionThree'],
     }
@@ -17,7 +23,7 @@ export default function Home() {
         <SectionsContainer {...options}>
             {/* <Section> */}
                 <Wrap>
-                    <MainImg src="assets/img/main.png" alt="" />
+                    <MainImg src={`${process.env.PUBLIC_URL}/assets/img/main.png`}/>
                     <MainWrap>
                         {/* section1 */}
                         <Title>
@@ -28,7 +34,7 @@ export default function Home() {
                         {/* section2 */}
                         <SubImg>
                             <SubImgWrap>
-                                <img src="assets/img/subImg.png" alt="" />
+                                <img src={`${process.env.PUBLIC_URL}/assets/img/subImg.png`} alt="" />
                             </SubImgWrap>
                         </SubImg>
 
@@ -42,7 +48,7 @@ export default function Home() {
                                     지금 바로 구독해보세요!</NewsP>
                             </NewsTitle>
                             <NewsInfo>
-                                <NewsImg> <img src="assets/img/image.png" style={{ height: '83px' }} /></NewsImg>
+                                <NewsImg> <img src={`${process.env.PUBLIC_URL}/assets/img/image.png`} style={{ height: '83px' }} /></NewsImg>
                                 <NewsName>
                                     <Category>Newsletter</Category>
                                     <NewsSpan style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: '400' }}>위클리어스</NewsSpan>
@@ -59,7 +65,7 @@ export default function Home() {
             <Section>
                 <SectionWrap>
                     <ContWrap style={{ borderRight: 'none', borderBottom: 'none' }}>
-                        <img src="assets/img/c.png" style={{ width: '100%', objectFit: 'contain' }} />
+                        <img src={`${process.env.PUBLIC_URL}/assets/img/c.png`} style={{ width: '100%', objectFit: 'contain' }} />
                     </ContWrap>
                     <ContWrap style={{ borderBottom: 'none' }}>
                         <TextWrap>
@@ -69,21 +75,21 @@ export default function Home() {
                                 매 순간이 지구를 위한 선택의 기회입니다. <br />
                                 지금 바로 우리의 힘을 모아, 환경 캠페인에 힘차게 동참합시다.
                             </NewsP>
-                            <SectonIcon src="assets/img/challengeIcon.png" alt="" />
+                            <SectonIcon src={`${process.env.PUBLIC_URL}/assets/img/challengeIcon.png`} alt="" />
                         </TextWrap>
                     </ContWrap>
                     <ContWrap style={{ borderRight: 'none', padding: '60px' }}>
                         {/* <img src="assets/img/c3.png" style={{ width: '100%'}} /> */}
                         <Card>
-                            <img src="assets/img/c4.png" style={{ width: '100%' }} />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/c4.png`} style={{ width: '100%' }} />
                             <Badge>CanCrush Challenge</Badge>
                             <BadgeYear>2023</BadgeYear>
-                            <SectonIcon src="assets/img/challengeIcon.png" style={{ top: '20px', right: '35px' }} />
+                            <SectonIcon src={`${process.env.PUBLIC_URL}/assets/img/challengeIcon.png`} style={{ top: '20px', right: '35px' }} />
                             <div></div>
                         </Card>
                     </ContWrap>
                     <ContWrap>
-                        <img src="assets/img/c2.png" style={{ width: '100%', objectFit: 'contain' }} />
+                        <img src={`${process.env.PUBLIC_URL}/assets/img/c2.png`} style={{ width: '100%', objectFit: 'contain' }} />
                     </ContWrap>
                 </SectionWrap>
             </Section>
@@ -92,31 +98,31 @@ export default function Home() {
                     <FooterTitle>Follow Us</FooterTitle>
                     <FooterBox>
                         <FooterSns>INSTAGRAM</FooterSns>
-                        <img src="assets/img/link.png" alt="" />
+                        <img src="{`${process.env.PUBLIC_URL}/assets/img/link.png`}" alt="" />
                     </FooterBox>
                     <FooterBox>
                         <FooterSns>FACEBOOK</FooterSns>
-                        <img src="assets/img/link.png" alt="" />
+                        <img src="{`${process.env.PUBLIC_URL}/assets/img/link.png`}" alt="" />
                     </FooterBox>
                     <FooterBox>
                         <FooterSns>TWITTER</FooterSns>
-                        <img src="assets/img/link.png" alt="" />
+                        <img src="{`${process.env.PUBLIC_URL}/assets/img/link.png`}" alt="" />
                     </FooterBox>
                     <LinkBox>
                         <LinkBoxWrap>
                             <MarqueeGroup>
-                                <img src="assets/img/linkB.png" />
+                                <img src={`${process.env.PUBLIC_URL}/assets/img/link.png`} alt="" />
                                 <RinkText aria-hidden="true">LINKEDIN</RinkText>
-                                <img src="assets/img/linkB.png" />
+                                <img src={`${process.env.PUBLIC_URL}/assets/img/linkB.png`} alt="" />
                                 <RinkText aria-hidden="true">LINKEDIN</RinkText>
-                                <img src="assets/img/linkB.png" />
+                                <img src={`${process.env.PUBLIC_URL}/assets/img/linkB.png`} alt="" />
                             </MarqueeGroup>
 
                             <MarqueeGroup aria-hidden="true">
                                 <RinkText>LINKEDIN</RinkText>
-                                <img src="assets/img/linkB.png" />
+                                <img src={`${process.env.PUBLIC_URL}/assets/img/linkB.png`} alt="" />
                                 <RinkText>LINKEDIN</RinkText>
-                                <img src="assets/img/linkB.png" />
+                                <img src={`${process.env.PUBLIC_URL}/assets/img/linkB.png`} alt="" />
                                 <RinkText>LINKEDIN</RinkText>
                             </MarqueeGroup>
                         </LinkBoxWrap>
