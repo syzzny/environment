@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components'
 
 
 export const Wrap = styled.div`
-    padding: 0 80px;
+    padding: 80px;
     height: 100vh;
 
     /* 모바일 화면 크기 */
@@ -25,7 +25,7 @@ export const Wrap = styled.div`
 
 `
 export const MainImg = styled.img`
-    padding-top: 80px;
+    /* padding-top: 80px; */
     width: 100%;
     position: relative;
 
