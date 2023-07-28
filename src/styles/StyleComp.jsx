@@ -13,6 +13,8 @@ export const Wrap = styled.div`
   /* 태블릿 화면 크기 */
     @media (min-width: 768px) and (max-width: 1023px) {
         padding: 0 40px;
+        margin: 0 auto;
+        width: 100%;
     }
 
   /* 데스크탑 화면 크기 */
@@ -25,11 +27,21 @@ export const MainImg = styled.img`
     padding-top: 80px;
     width: 100%;
     position: relative;
+
+    /* 태블릿 화면 크기 */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        padding-top: 190px;
+    }
     /* 데스크탑 화면 크기 */
     @media (min-width: 1024px) and (max-width: 1279px) {
         padding-top: 40px;
     }
 `
+
+export const PadImg = styled.img`
+    
+`
+
 export const MainLogo = styled.img`
     position: absolute;
     width: 100%;
@@ -41,6 +53,10 @@ export const MainWrap = styled.div`
     height: 388px;
     align-items: flex-end;
 
+    /* 태블릿 화면 크기 */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        height: 366px;
+    }
     /* 데스크탑 화면 크기 */
     @media (min-width: 1024px) and (max-width: 1279px) {
         height: 316px;
@@ -61,6 +77,14 @@ export const Involved = styled.div`
     line-height: 34px;
     font-weight: 300;
     font-size: 20px;
+
+    /* 태블릿 화면 크기 */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        width: 120px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
 `
 export const Titletext = styled.h1`
     font-size: 100px;
@@ -68,9 +92,20 @@ export const Titletext = styled.h1`
     margin: 0;
     font-weight: 500;
     
+    /* 태블릿 화면 크기 */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 50px;
+        color: red;
+    }
     /* 데스크탑 화면 크기 */
     @media (min-width: 1024px) and (max-width: 1279px) {
         font-size: 70px;
+        color: green;
+    }
+    /* test */
+    @media (min-width: 1280px) and (max-width: 2560px) {
+        font-size: 70px;
+        color: blue;
     }
 `
 export const SubImg = styled.div`
@@ -113,6 +148,12 @@ export const NewsTitle = styled.div`
     padding: 40px;
     overflow: hidden;
 
+    /* 태블릿 화면 크기 */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        height: 160px;
+        padding: 30px;
+    }
+
     /* 데스크탑 화면 크기 */
     @media (min-width: 1024px) and (max-width: 1279px) {
         padding: 30px;
@@ -132,6 +173,11 @@ export const NewsP = styled.p`
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
 
+    /* 태블릿 화면 크기 */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        margin: 10px 0;
+        font-size: 15px;
+    }
     /* 데스크탑 화면 크기 */
     @media (min-width: 1024px) and (max-width: 1279px) {
         font-size: 15px;
@@ -146,6 +192,11 @@ export const NewsInfo = styled.div`
     display: flex;
     gap: 30px;
 
+
+    /* 태블릿 화면 크기 */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        padding: 14px 30px;
+    }
     /* 데스크탑 화면 크기 */
     @media (min-width: 1024px) and (max-width: 1279px) {
         padding: 14px 30px;
