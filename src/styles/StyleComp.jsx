@@ -102,21 +102,6 @@ export const Titletext = styled.h1`
         font-size: 70px;
         color: blue;
     }
-    /* 데스크탑 화면 크기 */
-    @media (max-width: 1440px) {
-        font-size: 70px;
-        color: pink;
-    }
-    /* 데스크탑 화면 크기 */
-    @media (max-width: 1680px) {
-        font-size: 70px;
-        color: yellow;
-    }
-    /* 데스크탑 화면 크기 */
-    @media (max-width: 1920px) {
-        font-size: 70px;
-        color: red;
-    }
 
 `
 export const SubImg = styled.div`
