@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components'
 
 
 export const Wrap = styled.div`
-    padding: 80px;
+    padding: 0 80px;
     height : 100%;
    height : var(--windowVh);
 
@@ -26,7 +26,7 @@ export const Wrap = styled.div`
 
 `
 export const MainImg = styled.img`
-    /* padding-top: 80px; */
+    padding-top: 80px;
     width: 100%;
     position: relative;
 
