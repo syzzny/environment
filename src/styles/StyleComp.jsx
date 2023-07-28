@@ -276,7 +276,8 @@ export const ContWrap = styled.div`
     }
 `
 export const SectionTitle = styled.h1`
-    font-size: 95px;
+    font-size: 9rem;
+    font-weight: 400;
     margin: 45px 0;
 
     /* 데스크탑 화면 크기 */
@@ -285,8 +286,13 @@ export const SectionTitle = styled.h1`
         margin: 20px 0;
     }
 `
+export const SectonSub = styled.p`
+    font-size: 1.8rem;
+    font-family: 'Noto Sans KR', sans-serif;
+
+`
 export const TextWrap = styled.div`
-    max-width: 611px;
+    max-width: 570px;
     margin: 0 auto;
     position: relative;
 
@@ -331,6 +337,7 @@ export const Badge = styled.div`
     line-height: 36px;
     border-radius: 20px;
     left: 35px;
+    font-size: 1.6rem;
     
     /* 데스크탑 화면 크기 */
     @media (max-width: 1024px) {
@@ -349,6 +356,7 @@ export const BadgeYear = styled.div`
     height: 40px;
     line-height: 36px;
     border-radius: 20px;
+    font-size: 1.6rem;
 
     /* 데스크탑 화면 크기 */
     @media (max-width: 1024px) {
@@ -366,7 +374,7 @@ export const Footer = styled.footer`
 `
 export const FooterTitle = styled.h1`
     padding: 60px 80px;
-    font-size: 130px;
+    font-size: 12rem;
     color: #fff;
     margin: 0;
 
@@ -391,7 +399,7 @@ export const FooterBox = styled.div`
     }
 `
 export const FooterSns = styled.p`
-    font-size: 35px;
+    font-size: 3.5rem;
     color: #fff;
 
     /* 데스크탑 화면 크기 */

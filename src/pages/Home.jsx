@@ -4,7 +4,7 @@ import {
     Titletext, NewsTitle, NewsInfo, NewsSpan, NewsP, NewsImg, NewsName, NewsDetail,
     Go, SubImgWrap, SubIcon, SectionWrap, ContWrap, SectionTitle, TextWrap, SectonIcon,
     Card, Badge, BadgeYear, Footer, FooterTitle, FooterBox, FooterSns, LinkBox,
-    AnimatedText, MarqueeGroup, LinkBoxWrap, RinkText, Category, Date
+    AnimatedText, MarqueeGroup, LinkBoxWrap, RinkText, Category, Date, SectonSub
 } from '../styles/StyleComp'
 
 import { SectionsContainer, Section } from 'react-fullpage';
@@ -71,11 +71,11 @@ export default function Home() {
                     <ContWrap style={{ borderBottom: 'none' }}>
                         <TextWrap>
                             <SectionTitle>Our Challenge</SectionTitle>
-                            <NewsP>
+                            <SectonSub>
                                 환경을 위한 변화의 주인공이 되어보세요! <br />
                                 매 순간이 지구를 위한 선택의 기회입니다. <br />
                                 지금 바로 우리의 힘을 모아, 환경 캠페인에 힘차게 동참합시다.
-                            </NewsP>
+                            </SectonSub>
                             <SectonIcon src={`${process.env.PUBLIC_URL}/assets/img/challengeIcon.png`} alt="" />
                         </TextWrap>
                     </ContWrap>
