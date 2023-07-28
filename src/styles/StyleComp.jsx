@@ -97,8 +97,19 @@ export const Titletext = styled.h1`
         font-size: 50px;
     }
     /* 데스크탑 화면 크기 */
-    @media (min-width: 1024px) and (max-width: 1279px) {
+    @media (min-width: 1024px) and (max-width: 1680px) {
         font-size: 70px;
+        color: blue;
+    }
+    /* test */
+    @media (min-width: 1920px) and (max-width: 1439px) {
+        font-size: 70px;
+        color: red;
+    }
+    /* test */
+    @media (max-width: 2560px) {
+        font-size: 70px;
+        color: yellow;
     }
 `
 export const SubImg = styled.div`
