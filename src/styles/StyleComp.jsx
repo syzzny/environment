@@ -95,17 +95,10 @@ export const Titletext = styled.h1`
     /* 태블릿 화면 크기 */
     @media (min-width: 768px) and (max-width: 1023px) {
         font-size: 50px;
-        color: red;
     }
     /* 데스크탑 화면 크기 */
     @media (min-width: 1024px) and (max-width: 1279px) {
         font-size: 70px;
-        color: green;
-    }
-    /* test */
-    @media (min-width: 1280px) and (max-width: 2560px) {
-        font-size: 70px;
-        color: blue;
     }
 `
 export const SubImg = styled.div`
