@@ -30,9 +30,6 @@ export default function Home() {
                             <SubImgWrap>
                                 <img src="assets/img/subImg.png" alt="" />
                             </SubImgWrap>
-                            <SubIcon>
-                                <img src="assets/img/SubIcon.png" style={{ position: 'absolute', left: '0', bottom: '0' }} />
-                            </SubIcon>
                         </SubImg>
 
                         {/* section3 */}

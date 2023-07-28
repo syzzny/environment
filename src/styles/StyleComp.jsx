@@ -51,7 +51,7 @@ export const MainLogo = styled.img`
 `
 export const MainWrap = styled.div`
     display: flex;
-    height: 388px;
+    height: auto;
     align-items: flex-end;
 
     /* 태블릿 화면 크기 */
@@ -113,8 +113,7 @@ export const SubImgWrap = styled.div`
     background-color: #fff;
     border: 1px solid #000;
     border-right: none;
-    width: 140px;
-    height: 140px;
+    padding: 2.5px;
     
     /* 데스크탑 화면 크기 */
     @media (max-width: 1024px) {
@@ -139,9 +138,9 @@ export const Newsletter = styled.div`
     border-top: none;
 `
 export const NewsTitle = styled.div`
-    height: 160px;
+    height: auto;
     text-align: left;
-    padding: 40px;
+    padding: 30px 35px;
     overflow: hidden;
 
     /* 태블릿 화면 크기 */
@@ -167,7 +166,8 @@ export const NewsSpan = styled.span`
 `
 export const NewsP = styled.p`
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
+    white-space: nowrap;
 
     /* 태블릿 화면 크기 */
     @media (min-width: 768px) and (max-width: 1023px) {
@@ -182,9 +182,9 @@ export const NewsP = styled.p`
 `
 export const NewsInfo = styled.div`
     border-top: 1px solid #000;
-    height: 126px;
+    height: auto;
     background-color: #f5f5f5;
-    padding: 10px 40px;
+    padding: 10px 35px;
     display: flex;
     gap: 30px;
 
