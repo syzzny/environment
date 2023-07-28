@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+@media screen and (max-width: 1024px) {
+  html {font-size:8px};
+}
+@media screen and (min-width: 1025px) {
+  html {font-size:10px};
+}
+
 .App {
   text-align: center;
   font-family: 'Lato', sans-serif;
