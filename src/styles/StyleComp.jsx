@@ -270,7 +270,7 @@ export const ContWrap = styled.div`
     overflow: hidden;
 
     &:nth-child(2){
-        padding: 30px 0;
+        padding: 4rem 0;
     }
     &:nth-child(3){
         padding: 20px;
