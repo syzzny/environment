@@ -269,6 +269,9 @@ export const ContWrap = styled.div`
     text-align: left;
     overflow: hidden;
 
+    &:nth-child(2){
+        padding: 30px 0;
+    }
     &:nth-child(3){
         padding: 20px;
         background-image:url(${c4ImgURL});
@@ -280,7 +283,8 @@ export const ContWrap = styled.div`
 export const SectionTitle = styled.h1`
     font-size: 9rem;
     font-weight: 400;
-    margin: 5rem 0;
+    margin: 0;
+    margin-bottom: 5rem;
 
     /* 데스크탑 화면 크기 */
     @media (max-width: 1024px) {
