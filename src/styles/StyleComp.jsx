@@ -262,6 +262,8 @@ export const SectionWrap = styled.div`
     grid-template-rows: 1fr 1.7fr;
 
 `
+
+const c4ImgURL = `${process.env.PUBLIC_URL}/assets/img/cc3.png`;
 export const ContWrap = styled.div`
     border: 2px solid #000;
     text-align: left;
@@ -269,7 +271,7 @@ export const ContWrap = styled.div`
 
     &:nth-child(3){
         padding: 20px;
-        background-image:url('../assets/img/cc3.png');
+        background-image:url(${c4ImgURL});
         background-size: cover;
         display: flex;
         align-items: center;
@@ -278,7 +280,7 @@ export const ContWrap = styled.div`
 export const SectionTitle = styled.h1`
     font-size: 9rem;
     font-weight: 400;
-    margin: 45px 0;
+    margin: 5rem 0;
 
     /* 데스크탑 화면 크기 */
     @media (max-width: 1024px) {
@@ -312,6 +314,7 @@ export const SectonIcon = styled.img`
         width: 35px;
     }
 `
+
 export const Card = styled.div`
     width: 456px;
     height: 368px;
