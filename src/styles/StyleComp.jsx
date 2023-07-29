@@ -254,8 +254,6 @@ export const Go = styled.div`
 
 // secton2 ---------------------------------------------------
 export const SectionWrap = styled.div`
-    /* width: 100%; */
-    /* padding:  80px; */
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1.3fr;
@@ -298,7 +296,7 @@ export const SectonSub = styled.p`
 
 `
 export const TextWrap = styled.div`
-    max-width: 570px;
+    max-width: 58rem;
     margin: 0 auto;
     position: relative;
 
@@ -310,7 +308,7 @@ export const TextWrap = styled.div`
 export const SectonIcon = styled.img`
     position: absolute;
     right: 0px;
-    bottom: 15px;
+    bottom: 2rem;
 
     /* 데스크탑 화면 크기 */
     @media (max-width: 1024px) {
@@ -320,8 +318,8 @@ export const SectonIcon = styled.img`
 `
 
 export const Card = styled.div`
-    width: 456px;
-    height: 368px;
+    width: 46rem;
+    height: 37rem;
     border: 1px solid #000;
     border-radius: 30px;
     z-index: 999;
@@ -337,13 +335,13 @@ export const Card = styled.div`
 `
 export const Badge = styled.div`
     border: 1px solid #000;
-    padding: 0 15px;
+    padding: 0 1.6rem;
     position: absolute;
-    bottom: 20px;
-    height: 40px;
-    line-height: 36px;
+    bottom: 2rem;
+    height: 4rem;
+    line-height: 3.6rem;
     border-radius: 20px;
-    left: 35px;
+    left: 3.5rem;
     font-size: 1.6rem;
     
     /* 데스크탑 화면 크기 */
@@ -356,12 +354,12 @@ export const Badge = styled.div`
 `
 export const BadgeYear = styled.div`
     border: 1px solid #000;
-    padding: 0 15px;
+    padding: 0 1.6rem;
     position: absolute;
-    bottom: 20px;
-    right: 165px;
-    height: 40px;
-    line-height: 36px;
+    bottom: 2rem;
+    right: 16.5rem;
+    height: 4rem;
+    line-height: 3.6rem;
     border-radius: 20px;
     font-size: 1.6rem;
 
@@ -380,7 +378,7 @@ export const Footer = styled.footer`
     width: 100%;
 `
 export const FooterTitle = styled.h1`
-    padding: 60px 80px;
+    padding: 6rem 8rem;
     font-size: 12rem;
     color: #fff;
     margin: 0;
@@ -393,9 +391,9 @@ export const FooterTitle = styled.h1`
 `
 export const FooterBox = styled.div`
     /* width: 100%; */
-    height: 120px;
+    height: 12rem;
     border-top: 1px solid #fff;
-    padding: 5PX 80px;
+    padding: 0.5rem 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -436,7 +434,7 @@ export const LinkBox = styled.div`
     font-size: 1.5rem;
     line-height: 1.5;
     background-color: #fff;
-    height: 120px;
+    height: 12rem;
 
     /* 데스크탑 화면 크기 */
     @media (max-width: 1024px){
